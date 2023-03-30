@@ -1,4 +1,5 @@
  import map from '../../assets/images/MapsicleMap.png'
+ import { Link } from "react-router-dom";
 function StatsLocation() {
     return (
       <>   
@@ -9,7 +10,7 @@ function StatsLocation() {
                         <div className="bg-black/10 flex flex-col rounded-2xl p-14">
                             <p className="text-2xl flex-1">At our car washing service, we know that your car is more than just a mode of transportation - it's a part of your life. That's why we take great care in providing top-quality car washing services that will leave your car looking like new. Our team of experienced professionals uses only the best products and techniques to ensure that your car receives the care it deserves. From exterior washes to full detailing, we offer a range of services to meet your car care needs.</p>
                             <div className="flex gap-5 pt-10">
-                                <button className="rounded-full bg-primary text-white py-2 px-8 font-dm-sans text-xl">Book Online Now</button>
+                            <Link to="/step-1" className="rounded-full bg-primary text-white py-2 px-8 font-dm-sans text-xl">Book Online Now</Link>
                                 <button className="rounded-full border-grey border py-2 px-8 font-dm-sans text-xl text-grey ease-in-out duration-300 hover:text-white hover:bg-primary hover:border-primary">Explore Services</button>
                             </div>
                         </div>

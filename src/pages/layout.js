@@ -1,15 +1,13 @@
 import Header from '../components/Layout/Header';
 import Footer from '../components/Layout/Footer';
-import Profile from '../components/Profile/Profile';
+import StepOne from '../components/Steps/StepOne';
  
-function Layout() {
+function Layout({ children }) {
   return (
     <div className="min-h-screen flex flex-col">
-        <Header />
-          <main className="flex-1">
-            <Profile />
-          </main>
-        <Footer />    
+      <Header />
+      <main className="flex-1">{children}</main>
+      <Footer />
     </div>
   );
 }

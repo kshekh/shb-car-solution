@@ -20,7 +20,7 @@ function Header() {
             </ul>
 
             <div className="flex gap-2">
-              <Link className="bg-white rounded-full text-primary py-1 px-4 font-dm-sans ">Book Online Now</Link> 
+              <Link to="/step-1" className="bg-white rounded-full text-primary py-1 px-4 font-dm-sans ">Book Online Now</Link> 
               <Link className="py-1 px-4 rounded-full font-medium text-white hover:bg-white hover:text-primary ease-in-out duration-300">Log In</Link>
             </div>
           </div>

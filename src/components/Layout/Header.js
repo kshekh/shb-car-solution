@@ -11,7 +11,7 @@ function Header() {
           </div>
           <div className="flex gap-2 items-center justify-end py-7">          
             <div className="flex gap-2">
-              <Link className="text-white rounded-full bg-primary py-1 px-4 font-dm-sans ">Book Online Now</Link> 
+              <Link to="/step-1" className="text-white rounded-full bg-primary py-1 px-4 font-dm-sans ">Book Online Now</Link> 
               {/* if logedIn !== true */}
               <Link className="py-1 px-4 font-dm-sans rounded-full font-medium text-warm-gray-800 hover:bg-primary hover:text-white ease-in-out duration-300">Log In</Link>
               {/* else */}
