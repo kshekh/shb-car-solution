@@ -29,12 +29,12 @@
 function OnlineBookWork() {
     return (
       <>   
-         <section className="relative z-10 bg-warm-gray-800 py-28">
-            <div className="max-w-screen-wrap px-2 wrap:px-5 mx-auto">
+         <section className="relative z-10 bg-stone-800 py-14 xl:py-28">
+            <div className="max-w-screen-wrap px-3 wrap:px-5 mx-auto">
                 <div className="space-y-3">
-                  <div className="relative space-y-20">
+                  <div className="relative space-y-10 xl:space-y-20">
                     <h2 className="text-4xl font-semibold text-white">How Online Booking Works</h2>
-                    <div className="grid grid-cols-3 gap-20">
+                    <div className="md:grid md:grid-cols-3 flex flex-col gap-5 md:gap-10 lg:gap-20">
                     {steps.map((setp, index) => {
                     return (
                         <div className="space-y-14" key={index}>

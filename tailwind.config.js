@@ -24,12 +24,18 @@ const config = {
 				2: '#EFF2F6',
 				3: '#656E79'
 			},
-			'warm-gray': colors.warmGray,
+			 
 			},
       backdropBlur: {
         xs: '2px',
       },
-	  
+	  minWidth: (theme) => ({
+		...theme('spacing')
+	}),
+
+	minHeight: (theme) => ({
+		...theme('spacing')
+	}),
     },
     screens: {
 			mv: '360px',

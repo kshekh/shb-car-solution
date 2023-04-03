@@ -18,13 +18,13 @@
 function WeOffers() {
     return (
       <>   
-         <section className="relative pt-60 pb-24 flex items-center">
+         <section className="relative pt-32 xl:pt-60 pb-10 xl:pb-24 flex items-center overflow-hidden">
             <div className="absolute inset-0">
-            <img src={offerBg} alt="offer bg" className="w-full" />
+            <img src={offerBg} alt="offer bg" className="min-w-full min-h-full max-w-none" />
             </div>
-            <div className="max-w-screen-wrap px-2 wrap:px-5 mx-auto relative z-10 space-y-10 w-full">
+            <div className="max-w-screen-wrap px-3 wrap:px-5 mx-auto relative z-10 space-y-10 w-full">
             <h2 className="text-4xl font-semibold text-white">How Online Booking Works</h2>
-              <div className="grid grid-cols-2 gap-10 items-center">
+              <div className="md:grid md:grid-cols-2 flex flex-col gap-8 md:gap-5 xl:gap-10 items-center">
               {offers.map((offer, index) => {
                     return (
                       <>

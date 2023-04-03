@@ -46,15 +46,15 @@ const handleChange = event => {
     return (
       <Layout>
         <section>
-          <div className="max-w-screen-wrap px-2 wrap:px-5 mx-auto space-y-20">
+          <div className="max-w-screen-wrap px-3 wrap:px-5 mx-auto space-y-10 sm:space-y-20">
             {/* Steps */}
-            <div className="relative max-w-screen-lg mx-auto mt-10 ">
-              <div className="flex ml-2 h-1.5 left-1/2 -translate-x-1/2 w-[calc(100%-120px)] bg-grey-2 absolute top-7 -translate-7">
-                <div className="h-full bg-primary ml-7 w-full">
+            <div className="relative max-w-screen-lg mx-auto mt-5 xs:mt-10 ">
+            <div className="flex sm:ml-2 h-1.5 left-1/2 -translate-x-1/2 w-[calc(100%-100px)] sm:w-[calc(100%-120px)] bg-grey-2 absolute top-7">
+                <div className="h-full bg-primary w-full">
                   <span className="invisible">steps</span>
                 </div>
               </div>
-              <div className="flex justify-between gap-2 relative z-10">
+              <div className="flex justify-between items-start gap-2 relative z-10">
                 {steps.map((step, index) => {
                   return (
                     <>
@@ -63,12 +63,12 @@ const handleChange = event => {
                         key={index}
                       >
                         <div
-                          className={`rounded-full  w-14 h-14 relative top-0.5 ${
+                          className={`rounded-full w-10 h-10 lg:w-14 lg:h-14 relative top-3 lg:top-0.5 ${
                             step.active ? "bg-primary" : "bg-grey-2"
                           }`}
                         ></div>
                         <p
-                          className={`text-grey text-center font-dm-sans ${
+                          className={`text-grey text-center font-dm-sans pt-3 ${
                             step.active ? "opacity-100" : "opacity-0"
                           }`}
                         >
@@ -87,9 +87,9 @@ const handleChange = event => {
             {/* Step-1 content */}
 
             <div className="max-w-screen-lg mx-auto">
-              <div className="space-y-20">
-                <div className="grid grid-cols-2 gap-20">
-                  <div className="relative pr-20">
+                <div className="space-y-10 md:space-y-20">
+                 <div className="md:grid md:grid-cols-2 flex flex-col gap-5 md:gap-10 lg:gap-20">
+                  <div className="relative xl:pr-20">
                     {/* Card Details */}
                     <div className={`space-y-10 hidden`}>
                       <h2 className="text-2xl text-grey-3xl font-medium">
@@ -127,14 +127,14 @@ const handleChange = event => {
                     </div>
                     {/* Thank you message */}
                     <div className="space-y-10">
-                      <h3 className="text-5xl text-primary font-bold">
+                    <h3 className="text-lg lg:text-3xl xl:text-5xl text-primary font-bold">
                         Thank your for your booking!
                       </h3>
-                      <p className="text-2xl flex-1 text-grey">
+                      <p className="lg:text-lg xl:text-2xl flex-1 text-grey">
                         You’ll receive a payment confirmation on your email
                         address soon.
                       </p>
-                      <p className="text-2xl flex-1 text-grey">
+                      <p className="lg:text-lg xl:text-2xl flex-1 text-grey">
                         Show the QR code below to the employee when you arrive.
                       </p>
 
@@ -144,9 +144,9 @@ const handleChange = event => {
                     </div>
                   </div>
 
-                  <div className="space-y-14">
+                   
                     <div className="space-y-10">
-                      <h3 className="text-5xl text-primary font-bold">
+                    <h3 className="text-3xl xl:text-5xl text-primary font-bold">
                         Booking Summary
                       </h3>
                       {/* Date and time */}
@@ -154,8 +154,8 @@ const handleChange = event => {
                       <div className="space-y-1">
                         <div className="flex justify-between">
                           <div className="flex gap-3">
-                            <Calendar className="text-stone-800 w-4 shrink-0" />{" "}
-                            <p className="text-stone-800 text-lg font-medium">
+                            <Calendar className="text-stone-800 w-4 shrink-0" /> 
+                            <p className="text-stone-800 lg:text-lg font-medium">
                               03 March 2023
                             </p>
                           </div>
@@ -165,8 +165,8 @@ const handleChange = event => {
                         </div>
                         <div className="flex justify-between">
                           <div className="flex gap-3">
-                            <Clock className="text-stone-800 w-5 shrink-0" />{" "}
-                            <p className="text-stone-800 text-lg font-medium">
+                            <Clock className="text-stone-800 w-5 shrink-0" /> 
+                            <p className="text-stone-800 lg:text-lg font-medium">
                               12:30 AM
                             </p>
                           </div>
@@ -177,25 +177,25 @@ const handleChange = event => {
                       </div>
 
                       <ul className="space-y-4">
-                        <li className="justify-between flex text-grey-3 text-2xl ">
+                        <li className="justify-between flex text-grey-3 lg:text-lg xl:text-2xl ">
                           <p>Car Wash</p>
                           <p>
                             <sup className="text-sm">CHF</sup>70
                           </p>
                         </li>
-                        <li className="justify-between flex text-grey-3 text-2xl">
+                        <li className="justify-between flex text-grey-3 lg:text-lg xl:text-2xl">
                           <p>Interior Cleaning</p>
                           <p>
                             <sup className="text-sm">CHF</sup>70
                           </p>
                         </li>
-                        <li className="justify-between flex text-grey-3 text-2xl">
+                        <li className="justify-between flex text-grey-3 lg:text-lg xl:text-2xl">
                           <p>Oil change</p>
                           <p>
                             <sup className="text-sm">CHF</sup>70
                           </p>
                         </li>
-                        <li className="justify-between flex text-grey-3 text-2xl font-semibold">
+                        <li className="justify-between flex text-grey-3 lg:text-lg xl:text-2xl font-semibold">
                           <p>Total</p>
                           <p>
                             <sup className="text-sm">CHF</sup>210
@@ -203,7 +203,7 @@ const handleChange = event => {
                         </li>
                       </ul>
                     </div>
-                  </div>
+                   
                 </div>
 
                 <div className="space-y-10">

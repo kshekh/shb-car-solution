@@ -10,7 +10,7 @@ function home() {
   return (
     
       <div className="App">
-        <div className="absolute inset-x-0 top-0 z-10">
+        <div className="absolute inset-x-0 top-0 z-40">
           <Header />
         </div>
         <HomeHero />

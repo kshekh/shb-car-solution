@@ -10,14 +10,18 @@ import 'typeface-dm-sans';
 import Home from "./pages/home";
 import Layout from "./pages/layout";
 import Profile from "./components/Profile/Profile";
-import StepOne from './components/Steps/StepOne';
-import StepTwo from './components/Steps/StepTwo';
-import StepThree from './components/Steps/StepThree';
-import StepFour from './components/Steps/StepFour';
 import Step1 from './pages/step-1';
 import Step2 from './pages/step-2';
 import Step3 from './pages/step-3';
 import Step4 from './pages/step-4';
+import CurrentBooking from './components/Profile/CurrentBooking';
+import TodayVehicles from './components/Employee/TodayVehicles';
+import AllBooking from './components/Employee/AllBooking';
+import Notification from './components/Employee/Notification';
+import NotificationDetails from './components/Employee/NotificationDetails';
+import Slide from './components/Administrator/Slide';
+import Employee from './components/Administrator/Employee';
+import Services from './components/Administrator/Services';
 
 export default function App() {
   return (
@@ -31,10 +35,14 @@ export default function App() {
         <Route path="/step-3" index element={<Step3 />} />
         <Route path="/step-4" index element={<Step4 />} />
         <Route path="/profile" index element={<Profile />} />       
-        {/* <Route path="/stepOne" index element={<StepOne />} />
-        <Route path="/stepTwo" index element={<StepTwo />} />
-        <Route path="/stepThree" index element={<StepThree />} />
-        <Route path="/stepFour" index element={<StepFour />} /> */}
+        <Route path="/current-boking" index element={<CurrentBooking />} />       
+        <Route path="/today-vehicles" index element={<TodayVehicles />} />       
+        <Route path="/all-booking" index element={<AllBooking />} /> 
+        <Route path="/notification" index element={<Notification />} /> 
+        <Route path="/notification-details" index element={<NotificationDetails />} /> 
+        <Route path="/slide" index element={<Slide />} /> 
+        <Route path="/employee" index element={<Employee />} /> 
+        <Route path="/services" index element={<Services />} /> 
       </Routes>
     </BrowserRouter>
   );

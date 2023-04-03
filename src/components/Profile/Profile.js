@@ -21,8 +21,8 @@ function Profile() {
   return (
     <Layout>
       <section>
-        <div className="max-w-screen-wrap px-2 wrap:px-5 mx-auto space-y-20">
-          <div className="grid grid-cols-2 py-10">
+        <div className="max-w-screen-wrap px-3 wrap:px-5 mx-auto space-y-20">
+          <div className="md:grid md:grid-cols-2 flex flex-col gap-10 py-10">
             {/* Column 1 */}
             <div className="space-y-10">
               <div className="flex gap-3 items-center">
@@ -67,18 +67,18 @@ function Profile() {
               </div>
             </div>
 
-            {/* Column 1 */}
+            {/* Column 2 */}
             <div className="space-y-12">
-              <div className="space-y-10">
-                <h3 className="text-5xl text-primary font-bold">
+              <div className="space-y-5 lg:space-y-10">
+               <h3 className="text-3xl xl:text-5xl text-primary font-bold">
                   Current Booking
                 </h3>
-                <div className="flex justify-between items-center">
-                  <div className="space-y-5">
+                <div className="flex flex-wrap gap-5 justify-between items-center">
+                  <div className="space-y-3 lg:space-y-5">
                     <div className="flex justify-between">
                       <div className="flex gap-3">
-                        <Calendar className="text-stone-800 w-6 shrink-0" />{" "}
-                        <p className="text-stone-800 text-xl font-medium">
+                        <Calendar className="text-stone-800 w-4 xl:w-6 shrink-0" /> 
+                        <p className="text-stone-800 xl:text-xl font-medium">
                           03 March 2023
                         </p>
                       </div>
@@ -88,8 +88,8 @@ function Profile() {
                     </div>
                     <div className="flex justify-between">
                       <div className="flex gap-3">
-                        <Clock className="text-stone-800 w-7 shrink-0" />{" "}
-                        <p className="text-stone-800 text-xl font-medium">
+                        <Clock className="text-stone-800 w-5 xl:w-7 shrink-0" /> 
+                        <p className="text-stone-800 xl:text-xl font-medium">
                           12:30 AM
                         </p>
                       </div>
@@ -109,7 +109,7 @@ function Profile() {
                             <span className="bg-grey-2 shrink-0 rounded-full w-6 h-6 inline-flex items-center justify-center text-primary">
                               <TickMark className="text-primary w-3" />
                             </span>
-                            <p class="text-grey-3 text-2xl">{item.item}</p>
+                            <p class="text-grey-3 lg:text-lg xl:text-2xl">{item.item}</p>
                           </li>
                         </>
                       );
@@ -123,6 +123,55 @@ function Profile() {
                   </button>
                 </div>
               </div>
+
+              <div class="pb-5 space-y-5">
+                  <h3 className="text-3xl xl:text-5xl text-grey-3 font-dm-sans font-semibold">
+                  Past Bookings
+                  </h3>
+
+                <div className="justify-between flex flex-wrap gap-5 items-center">
+                  <div className="flex gap-3 items-center">
+                    <div class="shrink-0"> <Clock className="text-stone-800 w-4 xl:w-6" /></div>
+                      <div className="space-y-1">
+                        <p className="xl:text-xl font-medium text-stone-800">27 January 2023</p>
+                        <p className="xl:text-xl font-medium text-stone-800">2:00 PM</p>
+                      </div>
+                  </div>
+                  <button className="border border-grey rounded-full text-grey py-3 px-6 font-medium hover:border-primary hover:bg-primary hover:text-white ease-in-out duration-300">
+                    View Booking
+                  </button>
+                </div>
+
+                <div className="justify-between flex flex-wrap gap-5 items-center">
+                  <div className="flex gap-3 items-center">
+                    <div class="shrink-0"> <Clock className="text-stone-800 w-4 xl:w-6" /></div>
+                    <div className="space-y-1">
+                      <p className="xl:text-xl font-medium text-stone-800">27 January 2023</p>
+                      <p className="xl:text-xl font-medium text-stone-800">2:00 PM</p>
+                    </div>
+                  </div>
+                  <button className="border border-grey rounded-full text-grey py-3 px-6 font-medium hover:border-primary hover:bg-primary hover:text-white ease-in-out duration-300">
+                    View Booking
+                  </button>
+                </div>
+
+                <div className="justify-between flex flex-wrap gap-5 items-center">
+                  <div className="flex gap-3 items-center">
+                    <div class="shrink-0"> <Clock className="text-stone-800 w-4 xl:w-6" /></div>
+                    <div className="space-y-1">
+                      <p className="xl:text-xl font-medium text-stone-800">27 January 2023</p>
+                      <p className="xl:text-xl font-medium text-stone-800">2:00 PM</p>
+                    </div>
+                  </div>
+                  <button className="border border-grey rounded-full text-grey py-3 px-6 font-medium hover:border-primary hover:bg-primary hover:text-white ease-in-out duration-300">
+                    View Booking
+                  </button>
+                </div>
+
+
+
+              </div>
+
             </div>
           </div>
         </div>
